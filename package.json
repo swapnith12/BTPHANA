@@ -8,7 +8,8 @@
   "dependencies": {
     "@sap/cds": "^7.9.3",
     "@sap/cds-odata-v2-adapter-proxy": "^1.9.21",
-    "express": "^4"
+    "express": "^4",
+    "@sap/xssec": "^3"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1",
@@ -26,5 +27,10 @@
     "app/project1",
     "app/swap_fiori2",
     "app/purchaseorderapp"
-  ]
+  ],
+  "cds": {
+    "requires": {
+      "auth": "xsuaa"
+    }
+  }
 }
