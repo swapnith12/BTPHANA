@@ -3,12 +3,16 @@
   "tenant-mode": "dedicated",
   "scopes": [
     {
-      "name": "BankName",
+      "name": "$XSAPPNAME.Viewer",
       "description": "someone can view data using this scope"
     },
     {
       "name": "$XSAPPNAME.Admin",
       "description": "someone can perform CURD on data using this scope"
+    },
+    {
+      "name": "$XSAPPNAME.authenticated-users",
+      "description": "authenticated-users"
     }
   ],
   "attributes": [
