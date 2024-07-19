@@ -10,7 +10,7 @@ build-parameters:
       commands:
         - npm ci
         - npx cds build --production
-modules:
+modules:  
   - name: demo1-srv
     type: nodejs
     path: gen/srv

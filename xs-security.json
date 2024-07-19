@@ -1,5 +1,5 @@
 {
-  "xsappname": "mycapapp",
+  "xsappname": "demo1",
   "tenant-mode": "dedicated",
   "scopes": [
     {
@@ -11,6 +11,7 @@
       "description": "someone can perform CURD on data using this scope"
     },
     {
+      "name":"demo1-srv",
       "name": "$XSAPPNAME.authenticated-users",
       "description": "authenticated-users"
     }

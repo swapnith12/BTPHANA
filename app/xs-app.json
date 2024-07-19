@@ -2,7 +2,7 @@
     "welcomeFile": "purchaseorderapp/webapp/",
     "authenticationMethod": "none",
     "sessionTimeout": 100,
-    "pluginMetadataEndpoint": "/metadata",
+    "pluginMetadataEndpoint": "/routes",
     "routes": [
       {
         "source": "^/purchaseorderapp/webapp/(.*)",
