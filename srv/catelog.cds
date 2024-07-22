@@ -45,10 +45,11 @@ service CatalogService @(path: 'CatalogService',requires:'authenticated-users'){
     entity ProductSet as projection on master.product;
     entity BusinessPartnerSet as projection on master.businesspartner;
     entity BusinessAddress as projection on master.address ;
-    entity EmployeeSet @(restrict:[{grant:['READ'],to:'Viewer',where:'bankName = $user.BankName'}
+    entity EmployeeSet 
+    @(restrict:[{grant:['READ'],to:'Viewer',where:'bankName = $user.BankName'}
                         ,{grant : ['WRITE'],to:'Admin'}
                         ]) 
-    as projection on master.employees;
+                        as projection on master.employees;
     // entity POItems as projection on transaction.poitems;
     entity POs @(odata.draft.enabled:true) as projection on transaction.purchaseorder{
         *,

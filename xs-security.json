@@ -9,11 +9,6 @@
     {
       "name": "$XSAPPNAME.Admin",
       "description": "someone can perform CURD on data using this scope"
-    },
-    {
-      "name":"demo1-srv",
-      "name": "$XSAPPNAME.authenticated-users",
-      "description": "authenticated-users"
     }
   ],
   "attributes": [

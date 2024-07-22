@@ -10,7 +10,23 @@ build-parameters:
       commands:
         - npm ci
         - npx cds build --production
-modules:  
+modules:
+  - name: demo1-ui
+    type: nodejs
+    path: app
+    parameters:
+      buildpack: nodejs_buildpack
+    build-parameters:
+      builder: npm-ci
+    requires:
+      - name: demo1-auth
+      - name: srv-api
+        group: destinations
+        properties:
+          name: srv-api
+          strictSSL: true
+          forwardAuthToken: true
+          url: '~{srv-url}'
   - name: demo1-srv
     type: nodejs
     path: gen/srv

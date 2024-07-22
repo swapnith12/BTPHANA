@@ -6,17 +6,17 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap/cds": "^7.9.3",
+    "@sap/cds": "^7",
+    "@sap/cds-hana": "^2",
     "@sap/cds-odata-v2-adapter-proxy": "^1.9.21",
-    "express": "^4",
-    "@sap/xssec": "^3"
+    "@sap/xsenv": "^4.0.0",
+    "@sap/xssec": "^3.3.5",
+    "passport": "^0.6.0"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^1",
+    "@cap-js/sqlite": "^1.2.1",
     "@sap/cds-dk": "^7",
-    "@sap/eslint-plugin-cds": "^3",
-    "@sap/ux-specification": "^1.120.14",
-    "eslint": "^9"
+    "@sap/ux-specification": "^1.108.14"
   },
   "scripts": {
     "start": "cds-serve",
@@ -31,6 +31,7 @@
   ],
   "cds": {
     "requires": {
+      "db": "hana",
       "auth": "xsuaa"
     }
   }

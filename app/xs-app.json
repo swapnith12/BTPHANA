@@ -8,12 +8,12 @@
         "source": "^/purchaseorderapp/webapp/(.*)",
         "target": "$1",
         "localDir": "purchaseorderapp/webapp/",
-        "authenticationType": "none"
+        "authenticationType": "xsuaa"
       },
       {
         "source": "^/(.*)$",
         "destination": "srv-api",
-        "authenticationType": "none"
+        "authenticationType": "xsuaa"
       }
     ]
-  }
+}
